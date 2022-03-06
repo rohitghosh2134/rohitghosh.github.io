@@ -95,7 +95,7 @@ h1,h2,h3,h4{
     font-weight: var(--font-semi-bold);
 }
 ul{
-    list-style:armenian;
+    list-style-type: disc;
 }
 a{
     text-decoration: none;
@@ -133,10 +133,27 @@ img{
     display: grid;
     gap: 1.5rem;
 }
-
+.header{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);  
+}
 /*==================== NAV ====================*/
-
-
+.nav{
+    max-width: 968px;
+    height:var(--header-height);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo,
+.nav_toggle{
+    color:var(--title-color);
+    font-weight: var(--font-medium);
+}
 /* show menu */
 
 
