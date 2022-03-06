@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 5rem;
@@ -22,7 +22,7 @@
     --container-color: #000;
 
     /*========== Font and typography ==========*/
-    --body-font: 'Dancing Script', cursive;
+    --body-font: 'Roboto Mono', monospace;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -95,7 +95,7 @@ h1,h2,h3,h4{
     font-weight: var(--font-semi-bold);
 }
 ul{
-    list-style-type: disc;
+    list-style:none;
 }
 a{
     text-decoration: none;
@@ -154,8 +154,53 @@ img{
     color:var(--title-color);
     font-weight: var(--font-medium);
 }
-/* show menu */
+.nav_logo:hover{
+    color:var(--first-color);
+}
+.nav_toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.nav_toggle:hover{
+    color: var(--first-color);
+}
+@media screen and (max-width:767px)
+{
+    .nav_menu{
+        position:fixed;
+        bottom:-100%;
+        left:0;
+        width:100%;
+        background-color: var(--body-color);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: .3s;
+    }
+}
+.nav_list{
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+.nav_link{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color:var(--title-color);
+    font-weight: var(--font-medium);
 
+}
+.nav_link:hover{
+    color:var(--first-color);
+}
+.nav_icon{
+    font-size:1.2rem;
+}
+/* show menu */
+.show-menu{
+    bottom:0;
+}
 
 /* Active link */
 
