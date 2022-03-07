@@ -33,7 +33,7 @@ const skillsContent=document.getElementById('skills_content'),
     skillsHeader=document.getElementById('.skills_header')
 
 function toggleSkills(){
-    let itemClass=this.parentNode.getElementByClassName
+    let itemClass=this.parentNode.className
     for(i=0;i<skillsContent.length;i++)
     {
         skillsContent[i].className='skills_content skills_close'
@@ -42,9 +42,7 @@ function toggleSkills(){
         this.parentNode.className='skills_content skills_open'
     }
 }
-skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
-})
+skillsHeader.forEach(el=>el.addEventListener('click', toggleSkills))
 /*==================== QUALIFICATION TABS ====================*/
 
 
