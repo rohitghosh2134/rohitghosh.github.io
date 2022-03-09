@@ -27,7 +27,7 @@
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list grid">
                         <li class="nav_item">
-                            <a href="#home" class="nav_link">
+                            <a href="#home" class="nav_link active-link">
                                 <i class="uil uil-home nav_icon"></i>Home
                             </a>
                         </li>
@@ -61,6 +61,8 @@
                     <i class="uil uil-times nav_close" id ='nav-close'></i>
                 </div>
                 <div class="nav_btns">
+                    <!--Theme change button-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -323,6 +325,21 @@
                             <!--==================== QUALIFICATION CONTENT 2====================-->
                         <div class="qualification_content" data-content id="work">
                             <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Dynamic Quiz Website</h3>
+                                    <span class="qualification_subtitle">Kalinga Institute of Industrial Technology</span>
+                                    <div class="qualification_calendar">
+                                        <i class="uil uil-calender"></i>
+                                        May 2021-Jul 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span> 
+                                    <!--span class="qualification_line"></span-->
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
@@ -446,7 +463,18 @@
 
             <!--==================== PROJECT IN MIND ====================-->
             <section class="project section">
-
+                <div class="project_bg">
+                    <div class="project_container container grid">
+                        <div class="project_data">
+                            <h2 class="project_title">AI Enabled B2B Invoice Management</h2>
+                            <p class="project_description">Full Stack Project of Invoice Prediction using, React,Html for Frontend and JDBC,Java Servlets,Sql for Backend</p>
+                            <a href="#contact" class="button button--flex button--white">
+                                Contact Me
+                                <i class="uil uil-message project_icon button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </section>
 
@@ -458,19 +486,96 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section_title">Contact Me</h2>
+                <span class="section_subtitle">Get in Touch</span>
 
+                <div class="contact_container container grid">
+                    <div>
+                        <div class="contact_information">
+                            <i class="uil uil-phone-alt contact_icon"></i>
 
+                            <div>
+                                <h3 class="contact_title">Call Me</h3>
+                                <span class="contact_subtitle">(+91)8420105422</span>
+                            </div>
+                        </div>
+                        <div class="contact_information">
+                            <i class="uil uil-envelope contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">rohitghoshkol8@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact_information">
+                            <i class="uil uil-map contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Location</h3>
+                                <span class="contact_subtitle">Kolkata-India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact_form">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Name</label>
+                                <input type="text" class="contact_input">    
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Email</label>
+                                <input type="Email" class="contact_input">    
+                            </div>
+                        
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Project</label>
+                                <input type="text" class="contact_input">    
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Message</label>
+                                <textarea name="" id="0" cols="7" rows="10" class="contact_input"></textarea>  
+                            </div>
+                            <div>
+                                <a href="#" class="button button--flex">
+                                    Send Message
+                                    <i class="uil uil-message project_icon button_icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+ 
+                </div>
             </section>
         </main>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer">
-
-            
+        <footer class="footer"> 
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Rohit Ghosh</h1>
+                        <span class="footer_title">Frontend and Backend Developer</span>
+                    </div>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#services" class="footer_link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer_link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer_link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets\js\swiper-bundle.min.js"></script>
